@@ -570,8 +570,8 @@ body { position: relative !important; }
 .about-panel,.location-panel{width:min(1160px,calc(100% - 48px));margin:0 auto 82px;display:grid;grid-template-columns:1.35fr .65fr;gap:35px;align-items:center;padding:38px;border:1px solid var(--line);border-radius:24px;background:#fbfaf8}
 .about-copy h2,.location-copy h2{font:700 clamp(30px,4vw,46px)/1.08 Manrope,sans-serif;letter-spacing:-1.8px;margin:16px 0}
 .about-copy p,.location-copy p{color:var(--muted);line-height:1.8;max-width:600px}
-.about-stat{min-height:210px;border-radius:18px;background:#ecebe7;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:28px;color:#292b2d}
-.about-stat-number{font:800 70px Manrope;letter-spacing:-5px}.about-stat p{color:#707178;line-height:1.6}
+.about-stat{min-height:210px;border-radius:18px;background:#ecebe7;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:28px;color:#292b2d;overflow:hidden}
+.about-stat-img{display:block;width:calc(100% + 56px);max-width:none;margin:-28px -28px 20px;aspect-ratio:448/302;height:auto;object-fit:cover;object-position:center 30%;border-radius:18px 18px 0 0}.about-stat-number{font:800 70px Manrope;letter-spacing:-5px}.about-stat p{color:#707178;line-height:1.6}
 .reviews-map{width:min(1160px,calc(100% - 48px));margin:0 auto 82px}
 .review-placeholder{display:flex;gap:18px;align-items:center;border:1px solid var(--line);background:#fbfaf8;padding:24px;border-radius:18px}.review-mark{font:800 28px Manrope;color:#777}.review-placeholder p{color:var(--muted);margin-bottom:0;line-height:1.6}
 .map-placeholder{min-height:300px;border-radius:18px;background:linear-gradient(135deg,#eeede9,#e3e2dd);display:grid;place-items:center;text-align:center;padding:24px;color:#4f5153}.map-pin{display:block;font-size:36px;margin-bottom:10px}.map-placeholder p{font-size:13px}
@@ -679,7 +679,7 @@ body { position: relative !important; }
 </div>
 <section class="about-panel" id="about">
   <div class="about-copy"><span class="eyebrow">ABOUT THERMOSCAN</span><h2>Understand the issue before it becomes a bigger problem.</h2><p>Thermal inspection helps identify unusual temperature patterns across accessible surfaces. We explain what the images indicate, what they cannot confirm on their own, and what steps may help next.</p><a class="btn outline" href="#process">How our inspection works ↗</a></div>
-  <div class="about-stat"><span class="about-stat-number">IR</span><span>Thermal imaging</span><p>A non-invasive way to investigate temperature differences.</p></div>
+  <div class="about-stat"><img class="about-stat-img" src="images/thermal-camera-inspection.webp" alt="Handheld thermal imaging camera scanning an electrical panel" width="448" height="302" loading="lazy"><span class="about-stat-number">IR</span><span>Thermal imaging</span><p>A non-invasive way to investigate temperature differences.</p></div>
 </section>
 <div class="section-head" id="services">
 <span class="eyebrow">See the whole picture</span>
